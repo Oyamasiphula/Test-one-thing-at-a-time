@@ -13,7 +13,7 @@ describe('readCSV', function() {
 
 describe('groupProducts', function() {
     it('should return grouped sales', function() {
-        salesWeek1 = {
+        var salesWeek1 = {
           'Soap Bar': 5,
           'Milk 1l': 5,
           'Soap Bar': 3
