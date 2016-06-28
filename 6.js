@@ -14,13 +14,15 @@ describe('readCSV', function() {
 describe('groupProducts', function() {
     it('should return grouped sales', function() {
         var salesWeek1 = {
-          'Soap Bar': 5,
-          'Milk 1l': 5,
-          'Soap Bar': 3
-        };
-        assert.deepEqual(nelisa.groupProducts(salesWeek1), {
+            'Soap Bar': 5,
             'Milk 1l': 5,
-            'Soap Bar': 8
-        });
+            'Soap Bar': 3
+        };
+        assert.deepEqual({
+                'Milk 1l': 5,
+                'Soap Bar': 8
+            },
+            nelisa.groupProducts(salesWeek1)
+        );
     });
 });
